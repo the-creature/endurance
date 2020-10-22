@@ -1,0 +1,276 @@
+openapi: 3.0.1
+info:
+  title: Doggos API
+  description: Users, breeds, doggos, and associated actions
+  version: 1.0.0
+servers:
+- url: https://doggos.example.com
+paths:
+  /login:
+    post:
+      summary: Create a token that the user can use in subsequent calls
+      requestBody:
+        description: Necessary information to generate a user login
+        content:
+          application/json:
+            schema:
+              required:
+              - username
+              - password
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: jordan
+                password:
+                  type: string
+                  example: password123
+      responses:
+        200:
+          description: 'The auth token and general info about the user. Include the token
+          string in calls that need auth in the Authorization header with the Bearer scheme'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  username:
+                    type: string
+                  name:
+                    type: string
+        400:
+          description: Invalid request
+          content: {}
+  /breed-list:
+    get:
+      summary: Get a list of breeds
+      responses:
+        200:
+          description: The list of available breeds
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  doggos:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        id:
+                          type: integer
+        400:
+          description: Invalid request
+          content: {}
+        401:
+          description: Unauthorized request
+          content: {}
+        404:
+          description: No breeds are available
+          content: {}
+      security:
+      - user: []
+  /doggos-list/{breedId}:
+    get:
+      summary: Get a list of doggos by breed
+      parameters:
+        - in: path
+          name: breedId
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the breed
+      responses:
+        200:
+          description: The list of available doggos in breed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  doggos:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        id:
+                          type: integer
+        400:
+          description: Invalid request
+          content: {}
+        401:
+          description: Unauthorized request
+          content: {}
+        404:
+          description: No available doggos in this breed
+          content: {}
+      security:
+      - user: []
+  /breed/{breedId}:
+    get:
+      summary: Get a complete list of info about a breed
+      parameters:
+        - in: path
+          name: breedId
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the breed
+      responses:
+        200:
+          description: The id and details about the requested breed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  details:
+                    $ref: '#/components/schemas/BreedDetails'
+        400:
+          description: Invalid request
+          content: {}
+        401:
+          description: Unauthorized request
+          content: {}
+        404:
+          description: The breed doesn't exist
+          content: {}
+      security:
+      - user: []
+  /doggo/{doggoId}:
+    get:
+      summary: Get a complete list of info about a doggo
+      parameters:
+        - in: path
+          name: doggoId
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the doggo
+      responses:
+        200:
+          description: The id and details about the requested doggo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  details:
+                    $ref: '#/components/schemas/DoggoDetails'
+        400:
+          description: Invalid request
+          content: {}
+        401:
+          description: Unauthorized request
+          content: {}
+        404:
+          description: The doggo doesn't exist
+          content: {}
+      security:
+      - user: []
+  /doggo:
+    post:
+      summary: Add a new doggo
+      requestBody:
+        description: Doggo that needs to be added to the doggo list for the user
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                details:
+                  $ref: '#/components/schemas/DoggoDetails'
+      responses:
+        200:
+          description: The id and all details (including updated ones) for the doggo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  details:
+                    $ref: '#/components/schemas/DoggoDetails'
+        400:
+          description: Invalid request
+          content: {}
+      security:
+      - user: []
+    put:
+      summary: Update any detail field
+      requestBody:
+        description: Doggo that needs to be updated
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                details:
+                  $ref: '#/components/schemas/DoggoDetails'
+      responses:
+        200:
+          description: The id and newly posted details for the doggo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  details:
+                    $ref: '#/components/schemas/DoggoDetails'
+        400:
+          description: Invalid request
+          content: {}
+        404:
+          description: The doggo doesn't exist
+          content: {}
+      security:
+      - user: []
+components:
+  schemas:
+    BreedDetails:
+      type: object
+      properties:
+        name:
+          type: string
+        characteristics:
+          type: array
+             items:
+               characteristic:
+                  type: string
+        image_url:
+          type: string
+    DoggoDetails:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: integer
+        breed:
+          type: string
+        weight:
+          type: string
+        height:
+          type: string
+        color:
+          type: string
+  securitySchemes:
+    user:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

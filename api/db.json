@@ -1,0 +1,611 @@
+{
+  "secret": "3ba2f4cb4115d85996e1daa55239b94d17074f352ca07431d26e4b30463dd13fc78e715330be9e969e1d8187e548395d0356cab66687b0dbd2d5f0bd043cd846",
+  "users": [
+    {
+      "username": "jordan",
+      "password": "5a60830ab9f58f552e982966fb6091f7013bbcdd1325da0870979ed8654f7fce2db07c9659a7566c364af328b8f7ba503ae40779cb53b602de5b25f90b3355b5",
+      "name": "Jordan"
+    }
+  ],
+  "breeds": [
+    {
+      "id": 1,
+      "name": "Dachshund",
+      "image_url": "",
+      "characteristics": [
+        {
+          "characteristic": "Good family companions"
+        },
+        {
+          "characteristics": "Adapts well to apartments"
+        },
+        {
+          "characteristics": "Kid-friendly"
+        },
+        {
+          "characteristics": "Does not tolerate cold"
+        },
+        {
+          "characteristics": "Tendency to bark or howl"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bulldog",
+      "image_url": "",
+      "characteristics": [
+        {
+          "characteristic": "Affectionate"
+        },
+        {
+          "characteristics": "Friendly to strangers"
+        },
+        {
+          "characteristics": "Prone to weight gain"
+        },
+        {
+          "characteristics": "Drolling potential"
+        },
+        {
+          "characteristics": "Does not tolerate heat extremes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Scottie",
+      "image_url": "",
+      "characteristics": [
+        {
+          "characteristic": "Independent and stubborn"
+        },
+        {
+          "characteristics": "Sensitive to praise and blame"
+        },
+        {
+          "characteristics": "Independent"
+        },
+        {
+          "characteristics": "Intelligent"
+        },
+        {
+          "characteristics": "Excellent watchdogs"
+        }
+      ]
+    }
+  ],
+  "dogs": [
+    {
+      "id": 49553273,
+      "name": "Blue 2",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49553262,
+      "name": "Dax",
+      "age": "Senior",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49553062,
+      "name": "Agent 13",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": "Golden",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49553156,
+      "name": "Weenie",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Brown / Chocolate",
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49553027,
+      "name": "Gus",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Brown / Chocolate",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49552832,
+      "name": "Andy",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Merle (Blue)",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49552934,
+      "name": "MICHELLE",
+      "age": "Young",
+      "breed": "Chihuahua",
+      "color": null,
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49552886,
+      "name": "Mambo",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49552887,
+      "name": "Boogaloo",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49552722,
+      "name": "45894380",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49552474,
+      "name": "45933258",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49552308,
+      "name": "Polar - Loves Big Mutts!",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": "Yellow / Tan / Blond / Fawn",
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49552106,
+      "name": "Scarlet Witch-energetic puppy",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": "Bicolor",
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49551760,
+      "name": "HUCK",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49551646,
+      "name": "Hansel and Gretel",
+      "age": "Young",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49551556,
+      "name": "Monte",
+      "age": "Adult",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49551536,
+      "name": "45943645",
+      "age": "Young",
+      "breed": "Dachshund",
+      "color": "Brown / Chocolate",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49551488,
+      "name": "Stanley",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49551487,
+      "name": "Sally",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49551486,
+      "name": "Sebastain",
+      "age": "Baby",
+      "breed": "Dachshund",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49539277,
+      "name": "Slick",
+      "age": "Young",
+      "breed": "Bulldog",
+      "color": "Black",
+      "size": "Large",
+      "gender": "Male"
+    },
+    {
+      "id": 49553174,
+      "name": "ATHENA",
+      "age": "Baby",
+      "breed": "Bulldog",
+      "color": "White / Cream",
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49552597,
+      "name": "45935777",
+      "age": "Baby",
+      "breed": "Bulldog",
+      "color": "White / Cream",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49552272,
+      "name": "Sweet Pea",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "Apricot / Beige",
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49551780,
+      "name": "1109369",
+      "age": "Young",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49542734,
+      "name": "Rosco",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "Red / Chestnut / Orange",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49539640,
+      "name": "Piglet",
+      "age": "Baby",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49539595,
+      "name": "Jack",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49537074,
+      "name": "TAZ",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Large",
+      "gender": "Male"
+    },
+    {
+      "id": 49536553,
+      "name": "Pluto",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49535841,
+      "name": "Turk",
+      "age": "Baby",
+      "breed": "Bulldog",
+      "color": "Gray / Blue / Silver",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49533797,
+      "name": "ANNIE",
+      "age": "Young",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49533338,
+      "name": "Daryl",
+      "age": "Young",
+      "breed": "Bulldog",
+      "color": "Harlequin",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49533091,
+      "name": "Shalimar",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49526719,
+      "name": "Okeley",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49520919,
+      "name": "Clarice",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "Brindle",
+      "size": "Large",
+      "gender": "Female"
+    },
+    {
+      "id": 49520649,
+      "name": "Dumpling",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "White / Cream",
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 49520722,
+      "name": "BERNIE",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": null,
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49518950,
+      "name": "Peaches and Pumpkin",
+      "age": "Adult",
+      "breed": "Bulldog",
+      "color": "Apricot / Beige",
+      "size": "Large",
+      "gender": "Female"
+    },
+    {
+      "id": 49517079,
+      "name": "Jack",
+      "age": "Young",
+      "breed": "Bulldog",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49448570,
+      "name": "Bubble and Squeak",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49447949,
+      "name": "Duncan",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49447751,
+      "name": "Jackson and Hyacinth",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49356034,
+      "name": "Winnie",
+      "age": "Young",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49355803,
+      "name": "Willow",
+      "age": "Baby",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 49350259,
+      "name": "Bentley",
+      "age": "Senior",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49334483,
+      "name": "Jojo in Texarkana AR/TX",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 49141233,
+      "name": "Frosty",
+      "age": "Senior",
+      "breed": "Scottie",
+      "color": "White / Cream",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 49076162,
+      "name": "Lachlan and Nessie",
+      "age": "Baby",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 48870718,
+      "name": "Sniper",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 48009194,
+      "name": "Mac-20",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 47188046,
+      "name": "Claire",
+      "age": "Senior",
+      "breed": "Scottie",
+      "color": null,
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 46914623,
+      "name": "Skyler",
+      "age": "Senior",
+      "breed": "Scottie",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 44179045,
+      "name": "Jock - Final Update - RIP",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": null,
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 43468167,
+      "name": "Theo",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Medium",
+      "gender": "Male"
+    },
+    {
+      "id": 42899317,
+      "name": "Shelby - Blind",
+      "age": "Senior",
+      "breed": "Scottie",
+      "color": null,
+      "size": "Small",
+      "gender": "Female"
+    },
+    {
+      "id": 40064677,
+      "name": "Prissy",
+      "age": "Baby",
+      "breed": "Scottie",
+      "color": "Tricolor (Brown, Black, & White)",
+      "size": "Medium",
+      "gender": "Female"
+    },
+    {
+      "id": 36855616,
+      "name": "Gipson - Permanent Foster NEEDED",
+      "age": "Young",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    },
+    {
+      "id": 31386846,
+      "name": "Scottie",
+      "age": "Adult",
+      "breed": "Scottie",
+      "color": "Black",
+      "size": "Small",
+      "gender": "Male"
+    }
+  ]
+}
