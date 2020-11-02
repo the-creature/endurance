@@ -1,25 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { BreedDetails } from './pages/BreedDetails';
-import { Dashboard } from './pages/Dashboard';
-import { Login } from './pages/Login';
+import { Detail, Dashboard, Login } from './pages';
 
 const App = () => (
   <Router>
-    <div>
-      <Switch>
-        <Route exact path="/">
-          <Dashboard />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/breed/:breedId">
-          <BreedDetails />
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Dashboard />
+      </Route>
+      <Route path="/login">
+        <Login />
+      </Route>
+      <Route path="/breed/:breedId">
+        <Detail />
+      </Route>
+    </Switch>
   </Router>
 );
 

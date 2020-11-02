@@ -260,12 +260,12 @@ components:
         name:
           type: string
         age:
-          type: integer
+          type: string
         breed:
           type: string
-        weight:
+        size:
           type: string
-        height:
+        gender:
           type: string
         color:
           type: string

@@ -1,13 +1,20 @@
-import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
+import { Action, combineReducers, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
 import counterReducer from './counterSlice';
+import authReducer from './authSlice';
+import breedReducer from './breedSlice';
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const reducer = combineReducers({
+  counter: counterReducer,
+  auth: authReducer,
+  breed: breedReducer,
 });
 
+export const store = configureStore({
+  reducer: reducer,
+});
+
+export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
